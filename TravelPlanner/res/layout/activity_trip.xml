@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ZZH.travelplanner.TripActivity" >
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"       
+	    >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/size10dp"
+	        android:layout_marginBottom="@dimen/size20dp"
+	        android:textSize="@dimen/text20sp"
+	        android:text="@string/trip_name" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/size30dp"
+	        android:layout_marginBottom="@dimen/size20dp"
+	        android:textSize="@dimen/text20sp"
+	        android:id="@+id/trip_name" />
+	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+	        >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="20dp"
+	        android:textSize="@dimen/text20sp"
+	        android:text="@string/trip_desc" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size10dp"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:textSize="@dimen/text20sp"
+        android:id="@+id/trip_desc" />
+    </LinearLayout>
+    
+    
+    <Button
+	        android:id="@+id/addbudgetbtn"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:onClick="addBudget"
+	        android:text="@string/addbudget"	  
+	        android:textSize="@dimen/text20sp"
+	        android:layout_marginBottom="@dimen/size10dp" />  
+        
+    <ListView
+        android:id="@+id/budgetlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"     
+        android:orientation="vertical" />
+
+</LinearLayout>

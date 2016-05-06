@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp" >
+    
+<TableLayout
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+   <!-- <TableRow  
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">       
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:layout_marginTop="20dp"
+	    		android:layout_marginBottom="25dp"
+	    		android:gravity="center"
+	    		android:textSize="@dimen/text25sp"
+	    		android:textStyle="bold"
+	    		android:text="@string/locationTitle" />       
+    </TableRow>
+        
+    <TableRow      
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp" >     
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/locationNameLabel" />        
+	        <EditText
+	           	android:id="@+id/locationNameValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 	    			    		
+    </TableRow>
+    
+    <TableRow         
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp" >        
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/locationDescriptionLabel" />        
+	        <EditText
+	            android:id="@+id/locationDescriptionValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 		    			    		
+    </TableRow>
+    
+    <TableRow   
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/locationCityLabel" /> 
+        
+	        <EditText
+	            android:id="@+id/locationCityValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 		    			    		
+    </TableRow>
+  
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp" >      
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/locationCountryCodeLabel" />        
+	        <EditText
+	            android:id="@+id/locationCountryCodeValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 	    			    		
+    </TableRow> -->
+    
+    <TableRow 
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">       
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:layout_marginTop="20dp"
+	    		android:layout_marginBottom="25dp"
+	    		android:gravity="center"
+	    		android:textSize="@dimen/text25sp"
+	    		android:textStyle="bold"
+	    		android:text="@string/budgetTitle" />        
+    </TableRow>
+    
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp" >      
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/chooselocation" />        
+	        <Spinner
+                android:id="@+id/locationspinner"
+                android:layout_width="@dimen/size0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="3"
+		        android:layout_gravity="center"
+		        android:textSize="@dimen/text25sp" /> 	    			    		
+    </TableRow>
+
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">        
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/dateArrivedLabel" />        
+	        <EditText
+	           	android:id="@+id/budgetDateArrivedValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 		    			    		
+    </TableRow>
+
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">       
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/dateDepartLabel" />        
+	        <EditText
+	            android:id="@+id/budgetDateDepartValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 			    			    		
+    </TableRow>    
+ 
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">       
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/amountLabel" /> 
+        
+	        <EditText
+	            android:id="@+id/budgetAmountValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 		    			    		
+    </TableRow>    
+         
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">      
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/descriptionLabel" /> 
+        
+	        <EditText
+	            android:id="@+id/budgetDescriptionValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 			    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">       
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/categoryLabel" />       
+	        <EditText
+	            android:id="@+id/budgetCategoryValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 			    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp"> 
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1.5"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/supplierLabel" />        
+	        <EditText
+	            android:id="@+id/budgetSupplierValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 		    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">     
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/addressLabel" />        
+	        <EditText
+	            android:id="@+id/budgetAddressValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 	    			    		
+    </TableRow> 
+     
+     <TableRow    
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp">       
+	        <Button
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/savebudgetbtn"
+		        android:text="@string/addBudgetExpenses"
+		        android:textSize="@dimen/text25sp"
+		        android:onClick="saveBudget"
+		        android:textStyle="bold" />         
+    </TableRow>
+        
+    <TableRow    
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">       
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:layout_marginTop="20dp"
+	    		android:layout_marginBottom="25dp"
+	    		android:gravity="center"
+	    		android:textSize="@dimen/text25sp"
+	    		android:textStyle="bold"
+	    		android:text="@string/actualTitle" />         
+    </TableRow>
+
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">   
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/dateArrivedLabel" />         
+	        <EditText
+	            android:id="@+id/actualDateArrivedValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 	   	    			    		
+    </TableRow>
+
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">       
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/dateDepartLabel" />        
+	        <EditText
+	            android:id="@+id/actualDateDepartValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 	 	    			    		
+    </TableRow>    
+ 
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">        
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/amountLabel" />        
+	        <EditText
+	            android:id="@+id/actualAmountValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 	 	    			    		
+    </TableRow>    
+        
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">   
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/descriptionLabel" />        
+	        <EditText
+	            android:id="@+id/actualDescriptionValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 	    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">     
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/categoryLabel" />        
+	        <EditText
+	            android:id="@+id/actualCategoryValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" /> 		    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">     
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1.5"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/supplierLabel" />         
+	        <EditText
+	            android:id="@+id/actualSupplierValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" />	    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">    
+	        <TextView
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"    		
+	    		android:layout_weight="1"
+	    		android:textSize="@dimen/text20sp"
+	    		android:gravity="right"
+	    		android:layout_marginRight="@dimen/size15dp"
+	    		android:text="@string/addressLabel" />        
+	        <EditText
+	            android:id="@+id/actualAddressValue"
+	       		android:layout_width="@dimen/size0dp"
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="3"
+	    		android:textSize="@dimen/text20sp" />	 	    			    		
+    </TableRow> 
+    
+     <TableRow 
+         android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="@dimen/size5dp">    
+	        <!-- <Button
+		        android:layout_width="@dimen/size0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_marginRight="10dp"
+		        android:id="@+id/cancelbtn"
+		        android:text="@string/cancel"
+		        android:textSize="@dimen/text25sp"
+		        android:onClick="cancel"
+		        android:textStyle="bold" /> -->
+		    <Button
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/saveactualbtn"
+		        android:text="@string/addActualExpenses"
+		        android:textSize="@dimen/text25sp"
+		        android:onClick="saveActual"
+		        android:textStyle="bold" />    	    			    		
+    </TableRow>    
+</TableLayout>
+
+
+</ScrollView>
+

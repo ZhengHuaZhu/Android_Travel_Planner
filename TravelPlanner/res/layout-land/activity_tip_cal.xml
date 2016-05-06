@@ -1,0 +1,189 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="90dp"
+    android:paddingRight="90dp"
+    android:paddingTop="50dp"
+    tools:context="com.ZZH.travelplanner.TipCalActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_tipcal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:paddingBottom="50dp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:textStyle="bold"
+        android:text="@string/bill"
+        android:textSize="20sp" />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/billamount"
+        android:textSize="20sp"
+        android:textColor="#FE642E" 
+        android:textStyle="bold" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tippercentages"
+        android:textSize="20sp" 
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+    
+    <RadioGroup 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="30dp" >
+	    <RadioButton android:id="@+id/ten"
+	        android:layout_width="@dimen/size0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="@dimen/size40dp"
+	      
+	        android:text="@string/ten"
+	        android:onClick="onRadioButtonClicked"/>
+	    <RadioButton android:id="@+id/fifteen"
+	        android:layout_width="@dimen/size0dp"
+	        android:layout_height="wrap_content"
+	
+	        android:layout_weight="1"
+	       
+	        android:text="@string/fifteen"
+	        android:onClick="onRadioButtonClicked"/>
+	    <RadioButton android:id="@+id/twenty"
+	        android:layout_width="@dimen/size0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	   
+	        android:text="@string/twenty"
+	        android:onClick="onRadioButtonClicked"/>
+	</RadioGroup>
+	
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip"
+        android:textStyle="bold"
+        android:textSize="@dimen/text20sp" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipamount"
+        android:text="@string/tipdefault"
+        android:textSize="@dimen/text20sp"
+        android:textColor="#FE642E" 
+        android:textStyle="bold"  />
+     
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sumtotal"
+        android:textStyle="bold"
+        android:textSize="@dimen/text20sp" 
+        android:paddingTop="@dimen/size20dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sumtotal"
+        android:text="@string/sumdefault"
+        android:textSize="@dimen/text20sp" 
+        android:textColor="#FE642E" 
+        android:textStyle="bold" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numberofpeople"
+        android:textStyle="bold"
+        android:textSize="@dimen/text20sp" 
+        android:paddingTop="@dimen/size30dp"
+        android:paddingBottom="@dimen/size20dp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center"
+      
+        android:paddingBottom="@dimen/size50dp" >
+	    
+        <Button
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/minusbtn"
+	        android:text="@string/minusbtn"
+	        android:textSize="@dimen/text20sp"
+	        android:onClick="minusOne"
+	        android:textStyle="bold" />
+	    
+        <TextView
+	        android:layout_width="@dimen/size50dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/defaultnumber"
+	        android:id="@+id/numberofpeople"
+	        android:textSize="@dimen/text20sp"
+	        android:gravity="center"
+	        android:textColor="#FE642E" 
+            android:textStyle="bold"  />
+        
+        <Button
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/plusbtn"
+	        android:text="@string/plusbtn"
+	        android:textSize="@dimen/text20sp"
+	        android:onClick="plusOne" 
+	        android:textStyle="bold" />
+        
+    </LinearLayout>
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/paymentperperson"
+        android:textStyle="bold"
+        android:textSize="@dimen/text20sp" />
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentperperson"
+        android:text="@string/perpersondefault"
+        android:textSize="@dimen/text20sp"
+        android:textColor="#FE642E" 
+        android:textStyle="bold"  />
+    
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size50dp"
+        android:id="@+id/calbtn"
+        android:text="@string/calculate"
+        android:textSize="@dimen/text20sp"
+        android:onClick="calculateTip"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" 
+        android:background="#FE642E"  />
+    
+
+</LinearLayout>
+</ScrollView>

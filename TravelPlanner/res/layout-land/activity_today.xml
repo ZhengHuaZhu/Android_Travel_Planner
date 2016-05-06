@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    
+   <TextView 
+       android:text="@string/select_an_arrive_date"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:textSize="@dimen/text45sp" 
+       android:paddingBottom="@dimen/size30dp"/>
+   
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center" 
+       android:orientation="horizontal" >
+       
+       <TextView 
+           android:text="@string/day"
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:gravity="center"
+       	   android:layout_weight="1"
+       	   android:textSize="@dimen/text30sp"  />
+       
+       <TextView
+           android:text="@string/month" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:gravity="center"
+       	   android:layout_weight="1"
+       	   android:textSize="@dimen/text30sp"  />
+       
+       <TextView
+           android:text="@string/year" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:gravity="center"
+       	   android:layout_weight="1"
+       	   android:textSize="@dimen/text30sp"  />
+            
+   </LinearLayout>
+   
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center" 
+       android:orientation="horizontal" >
+       
+       <Button 
+           android:text="@string/plus_sign"
+           android:textSize="@dimen/text25sp" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:layout_weight="1"
+       	   android:onClick="incrementDay" />
+       
+       <Button 
+           android:text="@string/plus_sign"
+           android:textSize="@dimen/text25sp" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:layout_weight="1"
+       	   android:onClick="incrementMonth" />
+       "
+       <Button 
+           android:text="@string/plus_sign"
+           android:textSize="@dimen/text25sp" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:layout_weight="1"
+       	   android:onClick="incrementYear" />
+            
+   </LinearLayout>
+   
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center" 
+       android:orientation="horizontal" >
+       
+       <TextView 
+           android:id="@+id/dayTV"
+           android:textSize="@dimen/text25sp" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:gravity="center"
+       	   android:layout_weight="1" />
+       
+       <TextView 
+           android:id="@+id/monthTV"
+           android:textSize="@dimen/text25sp" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:gravity="center"
+       	   android:layout_weight="1" />
+       
+       <TextView
+           android:id="@+id/yearTV" 
+           android:textSize="@dimen/text25sp" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:gravity="center"
+       	   android:layout_weight="1" />
+            
+   </LinearLayout>
+    
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center" 
+       android:orientation="horizontal"
+       android:paddingBottom="@dimen/size30dp" >
+       
+       <Button 
+           android:text="@string/minus_sign"
+           android:textSize="@dimen/text25sp" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:layout_weight="1"
+       	   android:onClick="decrementDay" />
+       
+       <Button 
+           android:text="@string/minus_sign"
+           android:textSize="@dimen/text25sp" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:layout_weight="1"
+       	   android:onClick="decrementMonth" />
+       
+       <Button 
+           android:text="@string/minus_sign"
+           android:textSize="@dimen/text25sp" 
+           android:layout_width="wrap_content"
+       	   android:layout_height="wrap_content"
+       	   android:layout_weight="1"
+       	   android:onClick="decrementYear" />
+            
+   </LinearLayout>
+   
+    <Button 
+	   android:text="@string/get_itinerary"
+	   android:textSize="@dimen/text25sp" 
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:layout_gravity="center"
+	   android:onClick="launchTodayFragment" />
+	   
+</LinearLayout>
+</ScrollView>

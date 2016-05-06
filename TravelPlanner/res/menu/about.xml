@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ZZH.travelplanner.AboutActivity" >
+    
+    <item
+        android:id="@+id/dawsoncollege"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:title="@string/dawsoncollege" />
+	
+	<item
+        android:id="@+id/courseid"
+        android:orderInCategory="102"
+        android:showAsAction="never"
+        android:title="@string/courseid" /> 
+        
+	<item
+        android:id="@+id/authors"
+        android:orderInCategory="103"
+        android:showAsAction="never"
+        android:title="@string/authors" />
+	
+	<item
+        android:id="@+id/info"
+        android:orderInCategory="104"
+        android:showAsAction="never"
+        android:title="@string/info" /> 
+
+</menu>

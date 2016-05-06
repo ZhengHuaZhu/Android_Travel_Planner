@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+<TableLayout
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*" >
+    
+   <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/locationTitle" /> 
+        
+    </TableRow>
+    
+    
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/locationNameLabel" /> 
+        
+	        <TextView
+	           	android:id="@+id/locationNameValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>
+    
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"        
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+	        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/locationDescriptionLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/locationDescriptionValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>
+    
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/locationCityLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/locationCityValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>
+    
+
+    
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/locationCountryCodeLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/locationCountryCodeValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>
+    
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/budgetTitle" /> 
+        
+    </TableRow>
+
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/dateArrivedLabel" /> 
+        
+	        <TextView
+	           	android:id="@+id/budgetDateArrivedValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>
+
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/dateDepartLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/budgetDateDepartValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>    
+ 
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/amountLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/budgetAmountValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>    
+    
+     
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/descriptionLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/budgetDescriptionValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/categoryLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/budgetCategoryValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/supplierLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/budgetSupplierValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/addressLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/budgetAddressValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>   
+        
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/actualTitle" /> 
+        
+    </TableRow>
+
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/dateArrivedLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/actualDateArrivedValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>
+
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/dateDepartLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/actualDateDepartValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>    
+ 
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/amountLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/actualAmountValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>    
+    
+     
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/descriptionLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/actualDescriptionValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/categoryLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/actualCategoryValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/supplierLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/actualSupplierValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>   
+     
+    <TableRow 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size5dp"
+        android:layout_marginBottom="@dimen/size5dp">
+        
+	        <TextView
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		android:text="@string/addressLabel" /> 
+        
+	        <TextView
+	            android:id="@+id/actualAddressValue"
+	       		android:layout_width="match_parent"
+	    		android:layout_height="match_parent"
+	    		android:gravity="center"
+	    		
+	    		android:hint="@string/notAvailable" /> 
+	    			    		
+    </TableRow>   
+    
+</TableLayout>
+</ScrollView>

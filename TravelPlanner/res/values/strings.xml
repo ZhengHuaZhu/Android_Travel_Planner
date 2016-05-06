@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TravelPlanner</string>
+    <string name="teamname">TravelACDZ</string>
+    <string name="menu">Menu</string>
+    <string name="hello">"Hello  "</string>
+    <string name="temp">"Donald Trump"</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tip_cal">TipCalActivity</string>
+    <string name="title_tipcal">"Tip Calculator"</string>
+    <string name="tippercentages">"Tip %"</string>
+    <string name="bill">Bill</string>
+    <string name="ten">10</string>
+    <string name="fifteen">15</string>
+    <string name="twenty">20</string>
+    <string name="tip">Tip</string>
+    <string name="tipdefault">0.00</string>
+    <string name="sumtotal">"Sum total"</string>
+    <string name="sumdefault">0.00</string>
+    <string name="paymentperperson">"Payment per person"</string>
+    <string name="perpersondefault">0.00</string>
+    <string name="defaultnumber">1</string>
+    <string name="minusbtn">-</string>
+    <string name="plusbtn">+</string>
+    <string name="numberofpeople">"Number of people"</string>
+    <string name="calculate">Calculate</string>
+    <string name="toastinvalidbill">"You have to input a number for the calculation!"</string>
+    <string name="choosepercentage">"Choose a percentage for your tip calculation."</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Andrew's String -->
+    <string name="budgetSelector">"Budget: "</string>
+    <string name="noBudget">No Selected Budget</string>
+    <string name="emptyList">Empty List</string>
+    <string name="notAvailable">"N/a"</string>
+    <string name="title_activity_itinerary">ItineraryActivity</string>
+    <string name="locationTitle">Location Details</string>
+    <string name="locationNameLabel">Name:</string>
+    <string name="locationDescriptionLabel">Description:</string>
+    <string name="locationCityLabel">City:</string>
+    <string name="locationCountryCodeLabel">Country Code:</string>
+    <string name="budgetTitle">Budgeted Expenses</string>
+    <string name="actualTitle">Actual Expenses</string>
+    <string name="dateArrivedLabel">Date Arrived:</string>
+    <string name="dateDepartLabel">Date Depart:</string>
+    <string name="amountLabel">Amount:</string>
+    <string name="categoryLabel">Category:</string>
+    <string name="descriptionLabel">Description:</string>
+    <string name="supplierLabel">Name of Supplier:</string>
+    <string name="addressLabel">Address:</string>
+
+    <!-- Manage Trips activity strings -->
+    <string name="add_trip">Add a Trip</string>
+
+    <!-- Strings about DVW Conversion Activity -->
+    <string name="title_activity_dvwconversion">DVWConversionActivity</string>
+    <string name="default_zero">0</string>
+    <string name="distance">Distance</string>
+    <string name="volume">Volume</string>
+    <string name="weight">Weight</string>
+    <string name="DVW_convert">Convert to:</string>
+    <string name="convert">Convert</string>
+    <!-- Distance Fragment Strings -->
+    <string name="title_activity_dvwdistance">DVWDistanceFragment</string>
+    <string name="kilometre">km</string>
+    <string name="metre">m</string>
+    <string name="centimetre">cm</string>
+    <string name="mile">mi</string>
+    <string name="foot">ft</string>
+    <string name="inch">in</string>
+    <!-- Volume Fragment Strings -->
+    <string name="title_activity_dvwvolume">DVWVolumeFragment</string>
+    <string name="litre">L</string>
+    <string name="gallon">gal</string>
+    <string name="millilitre">ml</string>
+    <string name="ounce">oz</string>
+    <!-- Weight Fragment Strings -->
+    <string name="title_activity_dvwweight">DVWWeightFragment</string>
+    <string name="pound">lbs</string>
+    <string name="kilogram">kg</string>
+
+    <string-array name="DVW_metrics">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+
+    <string name="title_activity_manage_trip">ManageTripActivity</string>
+    <string name="title_activity_today">TodayActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="confirm">Confirm</string>
+    <string name="exit">Exit</string>
+    <string name="alert">"Please enter your username."</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="nodata">"Username is missing!"</string>
+    <string name="setting">Setting</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="save">Save</string>
+    <string name="dawson">Dawson</string>
+    <string name="about">About</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="info">Info</string>
+    <string name="authors">Authors</string>
+    <string name="dawsoncollege">"Dawson College"</string>
+    <string name="courseid">"420-518-DW Mobile"</string>
+    <string name="author1">Andrew</string>
+    <string name="author2">Chris</string>
+    <string name="author3">Zheng Hua</string>
+    <string name="author4">Derek</string>
+    <string name="settings">Settings</string>
+    <string name="properties">Properties</string>
+    <string name="sync">Sync</string>
+    <string name="trips">Trips</string>
+    <string name="addbudget">Add budget</string>
+    <string name="cancel">Cancel</string>
+    <string name="chooselocation">Locations</string>
+    <string name="addBudgetExpenses">Add Budget Expenses</string>
+    <string name="addActualExpenses">Add Actual Expenses</string>
+    <string name="updateBudgetExpenses">Update Budget Expenses</string>
+    <string name="updateActualExpenses">Update Actual Expenses</string>
+    <string name="deleteActual">Delete Actual Expenses</string>
+    <string name="chosenlocation">Location:</string>
+    <string name="trip_name">Trip name:</string>
+    <string name="trip_desc">Trip description:</string>
+
+     <string name="content">"Overview
+        
+The purpose of this project is to create an application that will exercise what we have learned about Android 
+and Mobile software development.  It is to be integrated with our final project for PHP so we will be working 
+with the same team in each class.  In phase 1 we will implement most app only components, in phase 2 we 
+will integrate with our PHP and MySQL server side data.   This app is intended to be a trip/travel planning and 
+recording app.  
+
+General functionality
+
+Initially the app will have the user input their name. Once this is input the Activity displays a menu and series 
+of buttons per the UI specification that are clickable to invoke various functionality. On button click most will 
+launch an activity/fragment, the design of the UIs has to be clean and neat, aligned and looking nice."</string>
+    <string name="title_activity_author">AuthorActivity</string>
+    <string name="title_activity_properties">PropertiesActivity</string>
+    <string name="title_activity_comingsoon">ComingsoonActivity</string>
+    <string name="comingsoon">Coming soon!</string>
+
+    <!-- Currency converter activity strings -->
+    <string name="currency_title">Convert a Currency</string>
+    <string name="convert_to">To</string>
+    <string name="currency_usd">USD</string>
+    <string name="currency_cad">CAD</string>
+    <string name="title_activity_currency_conversion">CurrencyConversion</string>
+
+    <string-array name="currencies">
+        <item>AUD</item>
+        <item>BGN</item>
+        <item>BRL</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>CZK</item>
+        <item>DKK</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>HKD</item>
+        <item>HRK</item>
+        <item>HUF</item>
+        <item>IDR</item>
+        <item>ILS</item>
+        <item>INR</item>
+        <item>JPY</item>
+        <item>KRW</item>
+        <item>MXN</item>
+        <item>MYR</item>
+        <item>NOK</item>
+        <item>NZD</item>
+        <item>PHP</item>
+        <item>PLN</item>
+        <item>RON</item>
+        <item>RUB</item>
+        <item>SEK</item>
+        <item>SGO</item>
+        <item>THB</item>
+        <item>TRY</item>
+        <item>USD</item>
+        <item>ZAR</item>
+    </string-array>
+	
+    <string name="title_activity_trip">TripActivity</string>
+    <string name="title_activity_edit_expenses">EditExpensesActivity</string>
+    <string name="title_activity_trip_details">TripDetailsActivity</string>
+    <string name="title_activity_add_budget">AddBudgetActivity</string>
+	
+    	 <!-- Derek's Strings -->    
+    <string name="add_itinerary_item">"Add Itinerary Item"</string>
+	<string name="temperature">Temperature: </string>
+	<string name="forecast">Forecast: </string>
+	<string name="highTemp">High: </string>
+	<string name="lowTemp">Low: </string>
+	<string name="metric">Metric</string>
+	<string name="imperial">Imperial</string>
+	<string name="humidity">Humidity: </string>
+	<string name="pressure">Pressure: </string>
+	<string name="sunrise">Sunrise: </string>
+	<string name="sunset">Sunset: </string>
+	<string name="ground_level">Ground Level: </string>
+	<string name="sea_level">Sea Level: </string>
+	<string name="check_weather_forecast">Check Weather Forecast</string>
+	<string name="title_activity_weather_check">WeatherCheckActivity</string>
+	<string name="general">General</string>
+	<string name="location_details">Location Details</string>
+	<string name="windSpeed">Wind Speed: </string>
+	<string name="plus_sign">+</string>
+	<string name="minus_sign">-</string>
+	<string name="select_an_arrive_date">Select an Arrive Date</string>
+	<string name="day">Day</string>
+	<string name="month">Month</string>
+	<string name="year">Year</string>
+	<string name="get_itinerary">Get Itinerary</string>
+</resources>
